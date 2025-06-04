@@ -1,0 +1,58 @@
+Formulário.html
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Satisfação</title>
+</head>
+<body>
+    <h1>Pesquisa de Satisfação</h1>
+    <form action="#" method="post">
+        <!-- Dados Pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+        </fieldset>
+
+        <!-- Pesquisa -->
+        <fieldset>
+            <legend>Pesquisa</legend>
+
+            <p>Você ficou satisfeito com nosso atendimento?</p>
+            <input type="radio" id="sim1" name="satisfacao1" value="sim" required>
+            <label for="sim1">Sim</label><br>
+            <input type="radio" id="nao1" name="satisfacao1" value="nao">
+            <label for="nao1">Não</label><br><br>
+
+            <p>Você recomendaria nossos serviços?</p>
+            <input type="radio" id="sim2" name="satisfacao2" value="sim" required>
+            <label for="sim2">Sim</label><br>
+            <input type="radio" id="nao2" name="satisfacao2" value="nao">
+            <label for="nao2">Não</label><br><br>
+
+            <label for="melhoria">O que devemos melhorar?</label><br>
+            <select id="melhoria" name="melhoria" required>
+                <option value="">Selecione</option>
+                <option value="atendimento">Atendimento</option>
+                <option value="preco">Preço</option>
+                <option value="qualidade">Qualidade</option>
+                <option value="outros">Outros</option>
+            </select><br><br>
+
+            <input type="checkbox" id="autorizacao" name="autorizacao" required>
+            <label for="autorizacao">Autorizo compartilhar minha resposta com terceiros</label><br><br>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
